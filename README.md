@@ -1,4 +1,4 @@
-# apx
+# basic-better-auth
 
 To install dependencies:
 
