@@ -1,5 +1,4 @@
 import { APIError, betterAuth } from "better-auth";
-import { createAuthClient } from "better-auth/client";
 import { LoginPage, SignUpPage, HomePage } from "./ui";
 
 import { Hono } from "hono";
@@ -41,6 +40,7 @@ app.get("/logout", async (c) => {
     returnHeaders: true,
   });
 
+  //TODO: return headers to clear session cookie 
   return c.redirect("/");
 });
 
